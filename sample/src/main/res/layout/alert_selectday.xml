@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:alpha="0.7"
+    android:background="#474749"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+</RelativeLayout>
+   <RelativeLayout
+       android:layout_alignParentBottom="true"
+       android:background="#fff"
+       android:layout_width="match_parent"
+       android:layout_height="140dp">
+       <TextView
+           android:textColor="#000"
+           android:id="@+id/text_date"
+           android:layout_marginTop="6dp"
+           android:textSize="18sp"
+           android:text="@string/app_name"
+           android:layout_centerHorizontal="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+       <RadioGroup
+           android:layout_marginBottom="5dp"
+           android:id="@+id/select_group"
+           android:layout_alignParentBottom="true"
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="60dp">
+           <RadioButton
+               android:textColor="#98da70"
+               android:background="@drawable/button"
+               android:id="@+id/radio_morning"
+               android:gravity="center"
+               android:textSize="18sp"
+               android:text="上午"
+               android:layout_margin="8dp"
+               android:button="@null"
+               android:layout_width="0dp"
+               android:layout_height="40dp"
+               android:layout_weight="1"
+               />
+           <RadioButton
+               android:background="@drawable/button"
+               android:textColor="#98da70"
+               android:layout_margin="8dp"
+               android:id="@+id/radio_afternoon"
+               android:gravity="center"
+               android:textSize="18sp"
+               android:text="下午"
+               android:button="@null"
+               android:layout_width="0dp"
+               android:layout_height="40dp"
+               android:layout_weight="1"
+               />
+           <RadioButton
+               android:layout_margin="8dp"
+               android:textColor="#98da70"
+               android:background="@drawable/button"
+               android:id="@+id/radio_allday"
+               android:gravity="center"
+               android:textSize="18sp"
+               android:text="全天"
+               android:button="@null"
+               android:layout_width="0dp"
+               android:layout_height="40dp"
+               android:layout_weight="1"
+               />
+       </RadioGroup>
+   </RelativeLayout>
+</RelativeLayout>
